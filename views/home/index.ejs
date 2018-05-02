@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <% include ../partials/header.ejs %>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <% include ../partials/scripts.ejs %>
+    <!-- <h1><%= title %></h1> -->
+    <!-- <img src="/images/graphic_design.svg" alt="" class="graphic_img"> -->
+
+    <div class="container-fluid graphic_img">
+      <div class="container ">
+        <% include ../partials/menu.ejs %>
+
+
+          <div class="row ">
+
+            <div class="vertical-center">
+              <div class="col-md-12 ">
+                <!-- <img src="/images/speech_bubble.png" alt="speech_bubble" style="max-height: 120px;"> -->
+                <div class="row">
+                  <div class="col">
+                    <h1 id="title_header_1">DISCOVER AND INSTANTLY</h1>
+                  </div>
+                  <!-- <div class="col-4"> -->
+                  <!-- <img src="/images/speech_bubble.png" alt="speech_bubble" style="max-height: 120px;"> -->
+                  <!-- </div> -->
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h1>BOOK QUALIFIED TUTORS</h1>
+                  </div>
+                </div>
+                <!-- <h1>DISCOVER AND</h1>
+                <h1>INSTANTLY BOOK TUTORS</h1> -->
+                <div class="col-lg-10" style="padding-left:0px;">
+                  <p>
+                    Whether you’re struggling with a particular subject, <br> want to fine-tune your exam and revision technique, <br> or need a safe environment to openly discuss <br> questions, Tutorbloc has got you covered.
+                  </p>
+                  <button type="button" name="button">Get Started</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+      </div>
+    </div>
+    <% include ../partials/footer.ejs %>
+
+
+
+</body>
+
+</html>
