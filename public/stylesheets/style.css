@@ -82,8 +82,8 @@ nav {
   min-height:10vh;
 }
 .navbar {
-  padding-left: 85px;
-  padding-right: 85px;
+  padding-left: 105px;
+  padding-right: 105px;
   /* background-color: #E9D6CA; */
   background-color: rgba(233,214,202, 0.3);
 }
@@ -114,7 +114,7 @@ nav {
 }
 
 #main-content-alignment{
-  margin-left: 40px;
+  margin-left: 60px;
 }
 .logo {
   /* max-height: px; */
@@ -255,8 +255,8 @@ button {
 }
 @media(min-width:992px){
   .navbar {
-    padding-left: 85px;
-    padding-right: 85px
+    padding-left: 105px;
+    padding-right: 105px
   }
 
   .vertical-alignment {
@@ -278,8 +278,8 @@ button {
 }
 @media(min-width:1200px){
   .navbar {
-    padding-left: 85px;
-    padding-right: 85px
+    padding-left: 105px;
+    padding-right: 105px;
   }
   .vertical-alignment {
     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
