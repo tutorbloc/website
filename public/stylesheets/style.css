@@ -17,13 +17,26 @@
   font-family: Lato-LightItalic;
   src: url(../fonts/tbBodyFont/Lato-LightItalic.ttf);
 }
+
+@font-face {
+  font-family: Lato-Hairline;
+    src: url(../fonts/tbBodyFont/Lato-Hairline.ttf);
+}
+
+html, body{
+  height: 100%;
+}
+.main-content {
+    height: 90vh;
+    overflow-y: show; /* don't show content that exceeds my height */
+}
 * {
     box-sizing: border-box;
 }
 
 body {
    background-image: url("../images/background_pattern.svg");
-   background-color: #E2D1C6;
+   background-color: #E9D6CA;
    background-repeat: repeat;
 
 }
@@ -31,7 +44,13 @@ body {
 h1{
   font-family: ChauPhilomeneOneRegular;
   color: #5B5E6D;
-  font-size: 6vh;
+  font-size: 7.3vh;
+}
+h2 {
+  font-family: Lato-Regular;
+  color: #FFFFFF;
+  font-size: 2.3vh;
+  text-align: center;
 }
 a {
  font-family: Lato-Regular;
@@ -40,85 +59,65 @@ a {
 p {
   font-family: Lato-Light;
   color: #5B5E6D;
-  font-size: 2vh;
+  font-size: 2.5vh;
 }
-.vertical-center {
+.vertical-alignment {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 70vh; /* These two lines are counted as one :-)       */
+  min-height: 60vh; /* These two lines are counted as one :-)       */
 
   display: flex;
   align-items: center;
 
 }
+.vertical-center{
+  /* min-height: 100%; */
+  /* min-height: 50vh; */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 nav {
   min-height: 100%;
   min-height:10vh;
-  padding: 0px;
 }
 .navbar {
-  padding: 0px;
+  padding-left: 85px;
+  padding-right: 85px;
+  /* background-color: #E9D6CA; */
+  background-color: rgba(233,214,202, 0.3);
 }
 
 .nav-link {
   color: #5B5E6D;
-  font-size: 2vh;
-  font-style: Lato-Light;
+  font-size: 1.3vw;
+  font-family: Lato-Light;
+}
+
+.nav-site-links {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#title-bloc{
+ color:#2E3B51;
 }
 #brand {
   font-family: ChauPhilomeneOneRegular;
   color: #5B5E6D;
   padding-right: 25px;
+  font-size: 2vw;
 }
 
-#footer {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  left:0px;
-  bottom:0px;
-  height:8vh;
-  width:100%;
-  background-color: #FFFFFE;
-}
-/* #female_reader{
-  transform: translate(-9vw, -7.8vh);
-  height: 15vh;
-} */
-#female_reader{
-  transform: translate(0vw, -7.8vh);
-  height: 15vh;
-}
 #title_header_1 {
   color: #FFFFFF;
 }
 
-footer > div > div > ul  {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  margin: 0px;
-  padding: 0px;
-  align-items: center;
-
+#main-content-alignment{
+  margin-left: 40px;
 }
-
-footer > div > div > ul > li {
-  float: left;
-  color: #2E3B51;
-  padding-right: 50px;
-  font-size: 1.7vh;
-}
-footer > div > div> ul > li > a{
-  display: inline;
-  color: #2E3B51;
-}
-/* footer > ul > li > p{
-  display: inline;
-} */
 .logo {
-  max-height: 20px;
+  /* max-height: px; */
 }
 
 /* .graphic_img{
@@ -130,64 +129,90 @@ footer > div > div> ul > li > a{
 
 } */
 
-.copyright{
-  font-family: Lato-LightItalic;
-  font-size: 1.3vh;
-  /* vertical-align: center; */
-  text-align: center;
-  margin: 0px;
-  padding-right: 0px;
-}
-.footer_img {
-  padding-left: 5pt;
-  padding-right: 5pt;
-  height: 4vh;
-}
 
 button {
   background-color:  #2E3B51;
+  border: none;
   color: white;
-  font-family:  Lato-Light;
+  font-family:  Lato-Regular;
   border-radius: 5px;
-  font-size: 1.5vh;
+  font-size: 1.8vh;
   width: 25vh;
-  height: 5vh;
+  height: 6.8vh;
 }
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(91,94,109, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 
 }
 
-@include media-breakpoint-down(xs){
-  .container {
-    margin-left: 0;
-    margin-right: 0;
-  }
+.height-helper{
+  height: 100%;
+}
+ .informational-section{
+   background-color: #2E3B51;
+   height: 35vh;
+   /* margin-top: 55.6px; */
+ }
+
+.informational-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  height: 60px;
+}
+.informational-text {
+  color: #FFFFFF;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: Lato-Hairline;
+  font-size: 1.8vh;
+
+}
+.footer-section{
+  background-color: #FFFFFF;
+  height: 28vh;
+}
+
+.footer-title {
+  color: #5B5E6D;
+  font-size: 2.2vh;
+  font-family: Lato-Regular;
+}
+.footer-list {
+  list-style: none;
+  text-align: center;
+  font-size: 2vh;
+  font-family: Lato-Light;
+  color: #5B5E6D;
+  padding: 0;
+  margin-bottom: 0;
+}
+#footer-first-height-helper{
+  height: 80%;
+}
+#footer-second-height-helper{
+  height:10%;
+}
+#copyright {
+  font-size: 1.5vh;
+  font-family: Lato-LightItalic;
+  color: /* #5B5E6D; */ rgba(91,94,109,0.4);
+  text-align: center;
 }
 @media(max-width:576px){
   .graphic_img{
 
  }
- footer > ul > li {
-   float: left;
-   padding-right: 0px;
-   font-size: 1.7vw;
- }
- .copyright{
-   font-family: Lato-LightItalic;
-   font-size: 1.7vw;
-   text-align: center;
-   /* vertical-align: center; */
-   text-align: center;
-   margin: 0px;
- }
 
- .vertical-center {
+ .vertical-alignment {
    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
    min-height: 60vh; /* These two lines are counted as one :-)       */
 
    display: flex;
    align-items: center;
+   text-align: center;
 
  }
 
@@ -197,87 +222,80 @@ button {
    font-size: 4vh;
  }
 
- #footer {
-   position: fixed;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-
-   left:0px;
-   bottom:0px;
-   height:6vh;
-   width:100%;
-   background-color: #FFFFFE;
- }
- #female_reader{
-   transform: translate(-1vw, -6.3vh);
-   height: 13vh;
- }
 }
 @media(min-width:576px){
-   .graphic_img{
+   .navbar {
+     padding-left: 13px;
+     padding-right: 0px;
+   }
+  .vertical-alignment{
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 60vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
 
   }
-  footer > ul > li {
-    float: left;
-    padding-right: 0px;
-    font-size: 1.7vw;
-  }
-  .copyright{
-    font-family: Lato-LightItalic;
-    font-size: 1.3vw;
-    /* vertical-align: center; */
-    text-align: center;
-    margin: 0px;
-  }
-
 }
 @media(min-width:768px){
-  .graphic_img{
-    /* float:right; */
-    background-image: url("../images/graphic_design.svg");
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    background-size: 55%;
+  /* .navbar {
+    padding-left: 13px;
+    padding-right: 0px
+  } */
 
-  }
-  footer > ul > li {
-    float: left;
-    padding-right: 35px;
-    font-size: 1.7vh;
-  }
-  .copyright{
-    font-family: Lato-LightItalic;
-    font-size: 1.3vh;
-    color: rgba(91, 94, 109, 0.5);
-    /* vertical-align: center; */
+  .vertical-alignment {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 60vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
     text-align: center;
-    margin: 0px;
   }
-
 
 }
 @media(min-width:992px){
-  .graphic_img{
-    /* float:right; */
+  .navbar {
+    padding-left: 85px;
+    padding-right: 85px
+  }
+
+  .vertical-alignment {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 80vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+   .graphic_img{
     background-image: url("../images/graphic_design.svg");
     background-repeat: no-repeat;
-    background-position: 100% 100%;
-    background-size: 52.5%;
-
+    background-position: 100% 40%;
+    background-size: 50%;
   }
-  /* #female_reader{
-    transform: translate(-7.3vw, -7.8vh);
-    height: 15vh;
-  } */
+
 }
 @media(min-width:1200px){
+  .navbar {
+    padding-left: 85px;
+    padding-right: 85px
+  }
+  .vertical-alignment {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 80vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
   .graphic_img{
     /* float:right; */
     background-image: url("../images/graphic_design.svg");
     background-repeat: no-repeat;
-    background-position: 100% 110%;
-    /* background-size: 50%; */
+    background-position: 100% 40%;
+    background-size: 50%;
 
   }
 

@@ -13,15 +13,15 @@
   <% include ../partials/scripts.ejs %>
     <!-- <h1><%= title %></h1> -->
     <!-- <img src="/images/graphic_design.svg" alt="" class="graphic_img"> -->
+      <% include ../partials/menu.ejs %>
+    <div class="container-fluid graphic_img main-content ">
+      <div class="container " id="main-content-alignment">
 
-    <div class="container-fluid graphic_img">
-      <div class="container ">
-        <% include ../partials/menu.ejs %>
 
 
           <div class="row ">
 
-            <div class="vertical-center">
+            <div class=" col vertical-alignment">
               <div class="col-md-12 ">
                 <!-- <img src="/images/speech_bubble.png" alt="speech_bubble" style="max-height: 120px;"> -->
                 <div class="row">
@@ -43,7 +43,7 @@
                   <p>
                     Whether you’re struggling with a particular subject, <br> want to fine-tune your exam and revision technique, <br> or need a safe environment to openly discuss <br> questions, Tutorbloc has got you covered.
                   </p>
-                  <button type="button" name="button">Get Started</button>
+                  <button type="button" name="button">GET STARTED</button>
                 </div>
               </div>
             </div>
@@ -52,7 +52,89 @@
 
       </div>
     </div>
-    <% include ../partials/footer.ejs %>
+    <div class="container-fluid informational-section">
+      <div class="row justify-content-center align-items-center height-helper no-gutters">
+        <div class="col-lg-3 col-md-3 col-sm-12" >
+          <img src="/images/safeguarding_logo.svg" alt="" class="informational-image">
+          <h2>SAFEGUARDING</h2>
+          <div class="row justify-content-center">
+            <div class="col-10 ">
+              <p class="informational-text">
+                Every single tutor has been interviewed and handpicked for your safety.
+                We have checked their qualifications, verified their identity and ensured
+                 that they have no criminal records.
+               </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <img src="/images/payment_logo.svg" alt="" class="informational-image">
+          <h2>PAYMENT</h2>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <p  class="informational-text">
+                Forget about carrying around money and awkwardly paying for lessons in cash.
+                We’ve built a seamless payment process that leaves you to focus all your efforts on learning.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <img src="/images/scheduling_logo.svg" alt="" class="informational-image">
+          <h2>SCHEDULING</h2>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <p  class="informational-text">
+                Organise sessions without endless back-and-forth messages.
+                Our unique algorithm perfectly pairs you with tutors that match your subject,
+                 availability and location preferences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid footer-section">
+      <div class="row justify-content-center align-items-center" id="footer-first-height-helper">
+        <div class="col-4">
+          <div class="row justify-content-around">
+            <div class="col-xs-4">
+              <h2 class="footer-title">Product</h2>
+              <ul class="footer-list">
+                <li>Features</li>
+                <li>Download</li>
+                <li>Resources</li>
+              </ul>
+            </div>
+            <div class="col-xs-4">
+              <h2 class="footer-title">Resources</h2>
+              <ul class="footer-list">
+                <li>T&Cs</li>
+                <li>Support</li>
+                <li>Feedback</li>
+              </ul>
+            </div>
+            <div class="col-xs-4">
+              <h2 class="footer-title">Company</h2>
+              <ul class="footer-list">
+                <li>Blog</li>
+                <li>About</li>
+                <li>Mission</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="row justify-content-center align-items-center" id="footer-second-height-helper" >
+        <div class="col-4" >
+          <p id="copyright"> Copyright © 2018 Tutorbloc. All rights reserved. </p>
+        </div>
+      </div>
+    </div>
 
 
 
