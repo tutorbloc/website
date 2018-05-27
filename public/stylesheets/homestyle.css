@@ -2,7 +2,6 @@ h1 {
   font-family: ChauPhilomeneOneRegular;
   color: #5B5E6D;
   font-size: 7.3vh;
-  text-align: justify;
 }
 .vertical-alignment {
   min-height: 100%;
@@ -78,7 +77,7 @@ h1 {
     font-family: ChauPhilomeneOneRegular;
     color: #5B5E6D;
     font-size: 5.8vh;
-    text-align: justify;
+    text-align: center;
   }
 
   /* .footer-section {
@@ -126,6 +125,13 @@ h1 {
     text-align: center;
   }
 
+  h1 {
+    font-family: ChauPhilomeneOneRegular;
+    color: #5B5E6D;
+    font-size: 7.3vh;
+    text-align: center;
+  }
+
 }
 
 @media(min-width:992px) {
@@ -139,6 +145,13 @@ h1 {
     align-items: center;
     text-align: left;
   }
+
+  h1 {
+    font-family: ChauPhilomeneOneRegular;
+    color: #5B5E6D;
+    font-size: 7.3vh;
+    text-align: left;
+  }
 }
 
 @media(min-width:1200px) {
@@ -149,6 +162,13 @@ h1 {
     /* These two lines are counted as one :-)       */
     display: flex;
     /* align-items: center; */
+    text-align: left;
+  }
+
+  h1 {
+    font-family: ChauPhilomeneOneRegular;
+    color: #5B5E6D;
+    font-size: 7.3vh;
     text-align: left;
   }
 }
