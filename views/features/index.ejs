@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <% include ../partials/header.ejs %>
+    <link rel='stylesheet' href='/stylesheets/defaultstyle.css' />
+</head>
+
+<body>
+  <% include ../partials/scripts.ejs %>
+    <!-- <h1><%= title %></h1> -->
+    <!-- <img src="/images/graphic_design.svg" alt="" class="graphic_img"> -->
+      <% include ../partials/menu.ejs %>
+    <div class="container-fluid  main-content ">
+      <div class="container " >
+          <div class="row justify-content-center">
+            <div class=" col ">
+              <br>
+              <h1>FEATURES</h1>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container-fluid footer-section">
+      <div class="row justify-content-center align-items-center" id="footer-first-height-helper">
+        <div class="col-lg-4 col-md-4 col-sm-12 align-items-center">
+          <div class="row justify-content-around">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <h2 class="footer-title">Product</h2>
+              <ul class="footer-list">
+                <li>Features</li>
+                <li class="footer-center-list-item">Download</li>
+                <li>Resources</li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <h2 class="footer-title">Resources</h2>
+              <ul class="footer-list">
+                <li>T&Cs</li>
+                <li class="footer-center-list-item">Support</li>
+                <li>Feedback</li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <h2 class="footer-title">Company</h2>
+              <ul class="footer-list">
+                <li>Blog</li>
+                <li class="footer-center-list-item">About</li>
+                <li>Mission</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <br>
+      <div class="row justify-content-center align-items-center" id="footer-second-height-helper" >
+        <div class="col-4" >
+          <p id="copyright"> Copyright © 2018 Tutorbloc. All rights reserved. </p>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

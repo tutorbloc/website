@@ -6,7 +6,11 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var helmet = require('helmet');
 
-var index = require('./routes/home/index');
+var home = require('./routes/home/index');
+var download = require('./routes/download/index');
+var features = require('./routes/features/index');
+var mission = require('./routes/mission/index');
+var resources = require('./routes/resources/index');
 // var users = require('./routes/users');
 
 var app = express();
@@ -26,7 +30,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
-app.use('/', index);
+app.use('/', home);
+app.use('/mission',mission);
+app.use('/features', features);
+app.use('/download', download);
+app.use('/resources', resources);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

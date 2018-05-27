@@ -1,9 +1,9 @@
-<nav class="navbar navbar-expand-lg ">
-  <a class="navbar-brand" href="#" id="brand"> <img class="logo" src="/images/tbLogo.svg" /> tutor<span id="title-bloc">bloc</span> </a>
+<!-- <nav class="navbar navbar-expand-lg ">
+  <a class="navbar-brand" href="#" id="brand"> <img class="logo" src="/images/tbLogo.svg" /> <span id="namebrand"> tutor<span id="title-bloc">bloc</span></span> </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarText">
+  <div class="collapse navbar-collapse" id="navbarText" >
     <ul class="navbar-nav mr-auto">
       <li class="nav-item nav-site-links active">
         <a class="nav-link" href="#">Features </a>
@@ -53,4 +53,81 @@
 
     </ul>
   </div>
+</nav> -->
+
+
+<!-- <nav class="" id="menu">
+  <a class="" href="#" id="brand"> <img class="logo" src="/images/tbLogo.svg" /> <span id="namebrand"> tutor<span id="title-bloc">bloc</span></span> </a>
+
+
+    <div class="overlay" style="display:flex; flex-flow: nowrap">
+      <div class="overlay-content" style="display:flex; flex-flow: nowrap">
+        <ul class="navbar-nav mr-auto overlay-menu">
+          <li class="nav-item nav-site-links active">
+            <a class="nav-link" href="#">Features </a>
+          </li>
+          <li class="nav-item nav-site-links">
+            <a class="nav-link" href="#">Download</a>
+          </li>
+          <li class="nav-item nav-site-links">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item nav-site-links">
+            <a class="nav-link" href="#">Mission</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto overlay-menu">
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img src="/images/LI.svg" alt="LinkedIn">
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img src="/images/IG.svg" alt="Instagram">
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img src="/images/TW.svg" alt="Twitter">
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="/images/FB.svg" alt="Facebook">
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img src="/images/YT.svg" alt="YouTube">
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">Toggle Menu</a>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg ">
+  <a class="navbar-brand" href="/" id="brand"> <img class="logo" src="/images/tbLogo.svg" /> <span id="namebrand"> tutor<span id="title-bloc">bloc</span></span> </a>
+  <button class="navbar-toggler" type="button" onclick="openNav()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText" >
+    <% include websiteMenuContent %>
+  </div>
 </nav>
+
+<div id="menu" class="menu-overlay">
+
+  <% include mobileMenuContent %>
+</div>

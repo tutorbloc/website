@@ -6,7 +6,8 @@
     <%= title %>
   </title>
   <% include ../partials/header.ejs %>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/defaultstyle.css' />
+      <link rel='stylesheet' href='/stylesheets/homestyle.css' />
 </head>
 
 <body>
@@ -43,7 +44,7 @@
                   <p>
                     Whether you’re struggling with a particular subject, <br> want to fine-tune your exam and revision technique, <br> or need a safe environment to openly discuss <br> questions, Tutorbloc has got you covered.
                   </p>
-                  <button type="button" name="button">GET STARTED</button>
+                  <button type="button" class="standard-button"name="button">GET STARTED</button>
                 </div>
               </div>
             </div>
@@ -55,7 +56,7 @@
     <div class="container-fluid informational-section">
       <div class="row justify-content-center align-items-center height-helper no-gutters">
         <div class="col-lg-3 col-md-3 col-sm-12" >
-          <img src="/images/safeguarding_logo.svg" alt="" class="informational-image">
+          <img src="/images/safeguarding_logo.svg" alt="safeguarding" class="informational-image">
           <h2>SAFEGUARDING</h2>
           <div class="row justify-content-center">
             <div class="col-10 ">
@@ -68,7 +69,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12">
-          <img src="/images/payment_logo.svg" alt="" class="informational-image">
+          <img src="/images/payment_logo.svg" alt="payment" class="informational-image">
           <h2>PAYMENT</h2>
           <div class="row justify-content-center">
             <div class="col-10">
@@ -80,7 +81,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12">
-          <img src="/images/scheduling_logo.svg" alt="" class="informational-image">
+          <img src="/images/scheduling_logo.svg" alt="scheduling" class="informational-image">
           <h2>SCHEDULING</h2>
           <div class="row justify-content-center">
             <div class="col-10">
@@ -98,29 +99,29 @@
 
     <div class="container-fluid footer-section">
       <div class="row justify-content-center align-items-center" id="footer-first-height-helper">
-        <div class="col-4">
+        <div class="col-lg-4 col-md-4 col-sm-12 align-items-center">
           <div class="row justify-content-around">
-            <div class="col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-12">
               <h2 class="footer-title">Product</h2>
               <ul class="footer-list">
                 <li>Features</li>
-                <li>Download</li>
+                <li class="footer-center-list-item">Download</li>
                 <li>Resources</li>
               </ul>
             </div>
-            <div class="col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-12">
               <h2 class="footer-title">Resources</h2>
               <ul class="footer-list">
                 <li>T&Cs</li>
-                <li>Support</li>
+                <li class="footer-center-list-item">Support</li>
                 <li>Feedback</li>
               </ul>
             </div>
-            <div class="col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-12">
               <h2 class="footer-title">Company</h2>
               <ul class="footer-list">
                 <li>Blog</li>
-                <li>About</li>
+                <li class="footer-center-list-item">About</li>
                 <li>Mission</li>
               </ul>
             </div>
@@ -129,6 +130,7 @@
         </div>
 
       </div>
+      <br>
       <div class="row justify-content-center align-items-center" id="footer-second-height-helper" >
         <div class="col-4" >
           <p id="copyright"> Copyright © 2018 Tutorbloc. All rights reserved. </p>
