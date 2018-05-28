@@ -10,8 +10,11 @@ function myFunction() {
 
 function openNav() {
     document.getElementById("menu").style.width = "100%";
+    // console.log(document.getElementById("menu").style);
+    // document.getElementById("menu").style.display = "inline";
 }
 
 function closeNav() {
     document.getElementById("menu").style.width = "0%";
+    // document.getElementById("menu").style.display = "none";
 }
