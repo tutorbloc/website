@@ -118,7 +118,7 @@ hr {
   height: 30px
 }
 
-/* .graphic_img{ 
+/* .graphic_img{
 
   background-image: url("../images/graphic_design.svg");
   background-repeat: no-repeat;
@@ -132,7 +132,7 @@ hr {
   border: none;
   color: white;
   font-family: Lato-Regular;
-  border-radius: 5px;
+  border-radius: 5px; 
   font-size: 10px;
   width: 220px;
   height: 40px;
