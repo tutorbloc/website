@@ -60,7 +60,7 @@ a {
 p {
   font-family: Lato-Light;
   color: #5B5E6D;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 nav {
@@ -132,7 +132,7 @@ hr {
   border: none;
   color: white;
   font-family: Lato-Regular;
-  border-radius: 5px; 
+  border-radius: 5px;
   font-size: 10px;
   width: 220px;
   height: 40px;
