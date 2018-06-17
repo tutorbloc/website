@@ -8,8 +8,8 @@ var helmet = require('helmet');
 
 var home = require('./routes/home/index');
 var download = require('./routes/download/index');
-var features = require('./routes/features/index');
-var mission = require('./routes/mission/index');
+var madeForYou = require('./routes/madeForYou/index');
+var company = require('./routes/company/index');
 var resources = require('./routes/resources/index');
 // var users = require('./routes/users');
 
@@ -31,8 +31,8 @@ app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); /
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/', home);
-app.use('/mission',mission);
-app.use('/features', features);
+app.use('/company',company);
+app.use('/madeForYou', madeForYou);
 app.use('/download', download);
 app.use('/resources', resources);
 

@@ -1,0 +1,41 @@
+
+hr {
+  width: 85%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  justify-content: center;
+  font-family: ChauPhilomeneOneRegular;
+  font-size: 18px;
+}
+
+.main-content {
+  min-height: 100vh;
+  height: auto
+}
+ .strong-words {
+  color: #2E3B51;
+  font-style: italic;
+}
+.company-link {
+  font-size: 14px;
+
+}
+.company-link:hover{
+  text-decoration: none;
+  color: #2E3B51;
+}
+.company-content {
+  width: 70%;
+  align-items: center;
+  text-align: center;
+}
+
+
+#company-tagline {
+  text-align: center;
+  font-family: Lato-Italic;
+  font-size: 13px;
+}

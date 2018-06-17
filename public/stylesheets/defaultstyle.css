@@ -23,6 +23,10 @@
   src: url(../fonts/tbBodyFont/Lato-Hairline.ttf);
 }
 
+@font-face {
+  font-family: Lato-Bold;
+  src: url(../fonts/tbBodyFont/Lato-Bold.ttf);
+}
 html, body {
   height: 100%;
 }
@@ -68,11 +72,6 @@ nav {
   min-height: 10vh;
 }
 
-hr {
-  width: 85%;
-  /* margin-top: 0px; */
-  margin-top: 25px;
-}
 
 .main-content {
   height: 90vh;
@@ -251,10 +250,12 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 .menu-overlay-content ul li {
   float: left;
+
 }
 
 .menu-overlay a {
-  font-size: 20px
+  font-size: 20px;
+  white-space: nowrap;
 }
 .menu-overlay .hamburger {
   font-size: 20px;
@@ -276,6 +277,10 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   height: 20px;
 }
 
+#mobile-menu-hr{
+  width: 85%;
+  margin-top: 25px;
+}
 #title-bloc {
   color: #2E3B51;
 }
@@ -309,6 +314,11 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 #closebtnlink{
   text-align: center;
+}
+
+#welcome-text{
+  /* font-family: Lato-Bold; */
+  font-weight: 600;
 }
 @media(max-width:576px)  {
   .graphic_img {}
@@ -444,7 +454,7 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
   .footer-list li {
     display: block;
-    font-size: 12px;
+    font-size: 14px;
   }
 
 

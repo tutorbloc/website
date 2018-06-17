@@ -1,9 +1,20 @@
 
+@font-face {
+  font-family: Lato-Bold-Italic;
+  src: url(../fonts/tbBodyFont/Lato-BoldItalic.ttf);
+}
+
 h1 {
   font-family: ChauPhilomeneOneRegular;
   color: #5B5E6D;
   /* font-size: 7.3vh; */
   font-size: 25px;
+}
+
+#click-bait-text{
+  margin-top: 15px;
+  font-size: 10px;
+  font-family: Lato-Bold-Italic;
 }
 .vertical-alignment {
   min-height: 100%;
@@ -185,12 +196,12 @@ h1 {
   h1 {
     font-family: ChauPhilomeneOneRegular;
     color: #5B5E6D;
-    font-size: 48px;
+    font-size: 43px;
     text-align: left;
   }
 
   p {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 
