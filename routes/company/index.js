@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('company/index', { title: 'Tutorbloc' });
 });
 
+router.get('/about', function(req, res, next) {
+  res.render('company/index', { title: 'Tutorbloc' });
+});
+
 module.exports = router;
