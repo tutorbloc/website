@@ -95,12 +95,12 @@ nav {
 
 .nav-link {
   color: #5B5E6D;
-  font-size: 18px;
-  font-family: Lato-Light;
+  font-size: 16px;
+  font-family: Lato-Regular;
   text-align: center;
 }
 .nav-link:hover {
-  font-family: Lato-Regular;
+  /* font-family: Lato-Regular; */
   color: #5B5E6D;
 }
 .nav-site-links {
@@ -114,7 +114,8 @@ nav {
 
 .logo {
   /* padding-left: 12px; */
-  height: 33px
+  height: 33px;
+  transform: rotate(-20deg);
 }
 
 /* .graphic_img{
@@ -213,7 +214,8 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  /* left: 0; */
+  right: 0;
   background-color: #FFFFFF;
   overflow-x: hidden;
   transition: 0.5s;
@@ -305,7 +307,7 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #copyright {
-  font-size: 10px;
+  font-size: 12px;
   font-family: Lato-LightItalic;
   color: /* #5B5E6D; */
   rgba(91, 94, 109, 0.4);
@@ -513,6 +515,10 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   #namebrand {
     visibility: visible;
   }
+  .footer-section {
+    background-color: #FFFFFF;
+    min-height: 32vh;
+  }
 }
 
 @media(min-width:1200px) {
@@ -548,6 +554,10 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     visibility: visible;
   }
 
+  .footer-section {
+    background-color: #FFFFFF;
+    min-height: 32vh;
+  }
   /* #brand {
     font-family: ChauPhilomeneOneRegular;
     color: #5B5E6D;
