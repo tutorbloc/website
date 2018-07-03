@@ -3,18 +3,22 @@
 
 <head>
   <% include ../partials/header.ejs %>
-  <title>
-    <%= title %>
-  </title>
+    <title>
+      <%= title %>
+    </title>
     <link rel='stylesheet' href='/stylesheets/defaultstyle.css' />
     <link rel="stylesheet" href="/stylesheets/companystyle.css">
 </head>
 
 <body>
   <% include ../partials/scripts.ejs %>
+  <script type="text/javascript" src="/javascripts/madeForYou/script.js">
+
+  </script>
     <!-- <h1><%= title %></h1> -->
     <!-- <img src="/images/graphic_design.svg" alt="" class="graphic_img"> -->
     <% include ../partials/menu.ejs %>
+
       <div class="container-fluid  main-content ">
         <div class="container ">
           <div class="row justify-content-center">
@@ -33,13 +37,13 @@
         <div class="d-flex justify-content-around">
 
           <div class="p-1">
-            <a href="#" class="company-link"> ABOUT </a>
+            <a href="#" class="company-link" onclick="displayView('about')"> ABOUT </a>
           </div>
           <div class="p-1">
-            <a href="#" class="company-link"> TEAM</a>
+            <a href="#" class="company-link" onclick="displayView('team')"> TEAM</a>
           </div>
           <div class="p-1">
-            <a href="#" class="company-link">  BLOG </a>
+            <a href="#" class="company-link" onclick="displayView('blog')">  BLOG </a>
           </div>
 
         </div>
@@ -48,21 +52,32 @@
         <br>
         <div class="row justify-content-center">
           <div class="company-content">
-            <p> From <span class="strong-words"> supporting tutors </span> grow and run their businesses, to <span class="strong-words">empowering students</span>
-              through personalised lessons, <span class="strong-words">our story is one of trust and connection</span>—amongst everyone involved,
-              and their communities.
-            </p>
-            <br>
-            <p>
-              Our <u> vision</u> is to <span class="strong-words">decentralise</span> education and <span class="strong-words">transform</span> the way students approach learning.
-            </p>
-            <br>
-            <p>
-              Our <u>mission</u> is to build a <span class="strong-words">trusted</span> online community marketplace that delivers the <span class="strong-words">convenience</span>
-              of discovering and instantly booking <span class="strong-words">qualified</span> tutors.
-            </p>
+            <div id="about-content" >
+              <p> From <span class="strong-words"> supporting tutors </span> grow and run their businesses, to <span class="strong-words">empowering students</span> through personalised lessons, <span class="strong-words">our story is one of trust and connection</span>—amongst
+                everyone involved, and their communities.
+              </p>
+              <br>
+              <p>
+                Our <u> vision</u> is to <span class="strong-words">decentralise</span> education and <span class="strong-words">transform</span> the way students approach learning.
+              </p>
+              <br>
+              <p>
+                Our <u>mission</u> is to build a <span class="strong-words">trusted</span> online community marketplace that delivers the <span class="strong-words">convenience</span> of discovering and instantly booking <span class="strong-words">qualified</span>                tutors.
+              </p>
+            </div>
+            <div id="team-content" >
+              <!-- <p> Team Content</p> -->
+            </div>
+
+            <div id="blog-content" >
+              <!-- <p> Blog Content</p> -->
+            </div>
           </div>
+
+
         </div>
+
+
       </div>
 
       <% include  ../partials/footer.ejs %>

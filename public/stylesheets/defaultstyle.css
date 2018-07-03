@@ -72,6 +72,10 @@ nav {
   min-height: 10vh;
 }
 
+/* Text highlight */
+::selection {
+  background: #E6E6E8;
+}
 
 .main-content {
   min-height: 90%;
@@ -141,6 +145,7 @@ nav {
   font-size: 12px;
   width: 220px;
   height: 40px;
+
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
 transition-duration: 0.4s;
@@ -150,8 +155,14 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 .standard-button:hover {
   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4),0 17px 50px 0 rgba(0,0,0,0.2);
 }
+.standard-button:focus{
+  outline: 0;
+}
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(91,94,109, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler:focus{
+  outline-color: #C0B2A6;
 }
 .hamburger_logo{
   height: 25px;
@@ -159,7 +170,6 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 .height-helper {
   height: 100%;
 }
-
 /* .informational-section {
   background-color: #2E3B51;
   height: 35vh;
