@@ -4,11 +4,16 @@
   src: url(../fonts/tbBodyFont/Lato-BoldItalic.ttf);
 }
 
+body {
+    overflow-x: hidden;
+}
 h1 {
   font-family: ChauPhilomeneOneRegular;
   color: #5B5E6D;
   /* font-size: 7.3vh; */
   font-size: 25px;
+  text-align: left;
+  white-space: nowrap;
 }
 
 #click-bait-text{
@@ -47,13 +52,38 @@ h1 {
   font-family: Lato-Hairline;
   font-size: 14px;
 }
-
+.landing-info{
+  padding-left:50px;
+}
+#landing-img {
+  max-height:90vh;
+  min-width:100%;
+  height:500px;
+  float:left;
+}
 @media(max-width:576px)  {
-
   .line-break-pitch{
     display: none;
   }
-
+   #landing-img {
+    max-height:75vh;
+  }
+  .line-break-pitch{
+    display: none;
+  }
+  #welcome-text {
+    padding: 0px 30px;
+  }
+  #main-content-alignment {
+    margin-left: 0px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .landing-info{
+    padding-left:0px;
+    text-align: center;
+  }
   .informational-text {
     font-size: 15px;
     font-family: Lato-Light;
@@ -88,10 +118,10 @@ h1 {
 
 @media(min-width:576px) {
 
-  .line-break-pitch{
+
+  .remove-for-small {
     display: none;
   }
-
   .informational-section {
     background-color: #2E3B51;
     height: auto;
@@ -100,10 +130,7 @@ h1 {
     /* margin-top: 55.6px; */
   }
   h1 {
-    font-family: ChauPhilomeneOneRegular;
-    color: #5B5E6D;
-    font-size: 35px;
-    text-align: center;
+    font-size: 30px;
   }
 
   /* .footer-section {
@@ -143,7 +170,9 @@ h1 {
 }
 
 @media(min-width:768px) {
-
+  /* #landing-img {
+    height: 90vh;
+  } */
   .informational-image {
     display: block;
     margin-top: 0px;
@@ -166,10 +195,10 @@ h1 {
   }
 
   h1 {
-    font-family: ChauPhilomeneOneRegular;
-    color: #5B5E6D;
+    /* font-family: ChauPhilomeneOneRegular; */
+    /* color: #5B5E6D; */
     font-size: 32px;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .informational-text {
@@ -194,10 +223,10 @@ h1 {
   }
 
   h1 {
-    font-family: ChauPhilomeneOneRegular;
-    color: #5B5E6D;
-    font-size: 43px;
-    text-align: left;
+    /* font-family: ChauPhilomeneOneRegular; */
+    /* color: #5B5E6D; */
+    font-size: 40px;
+    /* text-align: left; */
   }
 
   p {
@@ -217,9 +246,9 @@ h1 {
   }
 
   h1 {
-    font-family: ChauPhilomeneOneRegular;
-    color: #5B5E6D;
+    /* font-family: ChauPhilomeneOneRegular; */
+    /* color: #5B5E6D; */
     font-size: 55px;
-    text-align: left;
+    /* text-align: left; */
   }
 }

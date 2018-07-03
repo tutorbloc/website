@@ -74,7 +74,9 @@ nav {
 
 
 .main-content {
-  height: 90vh;
+  min-height: 90%;
+  padding-right: 0px;
+  /* height: 90vh; */
   /* overflow-y: show;  */
   /* don't show content that exceeds my height */
 }
@@ -108,9 +110,11 @@ nav {
   padding-left: 10px;
 }
 
-/* #main-content-alignment{
+ #main-content-alignment{
   margin-left: 60px;
-} */
+  margin-right: 0px;
+  padding-right: 0px;
+}
 
 .logo {
   /* padding-left: 12px; */
@@ -332,9 +336,9 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     text-align: center;
   } */
   h1 {
-    font-family: ChauPhilomeneOneRegular;
-    color: #5B5E6D;
-    font-size: 30px;;
+    /* font-family: ChauPhilomeneOneRegular; */
+    /* color: #5B5E6D; */
+    /* font-size: 30px; */
   }
   p {
     font-size: 15px;
@@ -400,8 +404,9 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     text-align: center;
   } */
   #main-content-alignment {
-    /* margin-left: 0px; */
-    margin-left: inherit;
+    margin-left: 0px;
+    margin: 0px;
+    /* margin-left: inherit; */
   }
   /* .informational-section {
     background-color: #2E3B51;
@@ -462,7 +467,7 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 
   #main-content-alignment {
-    margin-left: inherit;
+    margin-left: 20px;
   }
   #namebrand {
     visibility: hidden;
