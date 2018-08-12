@@ -7,12 +7,12 @@
       <%= title %>
     </title>
     <link rel='stylesheet' href='/stylesheets/defaultstyle.css' />
-    <link rel="stylesheet" href="/stylesheets/companystyle.css">
+    <link rel="stylesheet" href="/stylesheets/ourStoryStyle.css">
 </head>
 
 <body>
   <% include ../partials/scripts.ejs %>
-  <script type="text/javascript" src="/javascripts/madeForYou/script.js">
+  <script type="text/javascript" src="/javascripts/ourStory/script.js">
 
   </script>
     <!-- <h1><%= title %></h1> -->
@@ -20,20 +20,12 @@
     <% include ../partials/menu.ejs %>
 
       <div class="container-fluid  main-content ">
-        <div class="container ">
-          <div class="row justify-content-center">
-            <div class=" col ">
-              <br>
-              <br>
-              <h1>COMPANY</h1>
-              <p id="company-tagline"> Created by tutors who believe in making learning fun and safe again.</p>
-            </div>
-          </div>
-        </div>
 
         <br>
+        <br>
+        <br>
 
-        <hr>
+        <hr class="company-hr">
         <div class="d-flex justify-content-around">
 
           <div class="p-1">
@@ -42,12 +34,12 @@
           <div class="p-1">
             <a href="#" class="company-link" onclick="displayView('team')"> TEAM</a>
           </div>
-          <div class="p-1">
+          <!-- <div class="p-1">
             <a href="#" class="company-link" onclick="displayView('blog')">  BLOG </a>
-          </div>
+          </div> -->
 
         </div>
-        <hr>
+        <hr class="company-hr">
         <br>
         <br>
         <div class="row justify-content-center">
@@ -69,9 +61,9 @@
               <!-- <p> Team Content</p> -->
             </div>
 
-            <div id="blog-content" >
-              <!-- <p> Blog Content</p> -->
-            </div>
+            <!-- <div id="blog-content" >
+
+            </div> -->
           </div>
 
 

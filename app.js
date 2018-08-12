@@ -7,10 +7,10 @@ var bodyParser = require('body-parser');
 var helmet = require('helmet');
 
 var home = require('./routes/home/index');
-var download = require('./routes/download/index');
-var madeForYou = require('./routes/madeForYou/index');
-var company = require('./routes/company/index');
-var resources = require('./routes/resources/index');
+var blog = require('./routes/blog/index');
+var features = require('./routes/features/index');
+var ourStory = require('./routes/ourStory/index');
+var resourceBank = require('./routes/resourceBank/index');
 // var users = require('./routes/users');
 
 var app = express();
@@ -20,7 +20,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
-app.use(favicon(path.join(__dirname, 'public/images', 'tutor_fav.ico')));
+app.use(favicon(path.join(__dirname, 'public/images', 'tutor_fav2.ico')));
 app.use(helmet());
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -31,10 +31,10 @@ app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); /
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/', home);
-app.use('/company',company);
-app.use('/solutions', madeForYou);
-app.use('/download', download);
-app.use('/resources', resources);
+app.use('/our-story',ourStory);
+app.use('/features', features);
+app.use('/blog', blog);
+app.use('/resource-bank', resourceBank);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

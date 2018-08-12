@@ -1,23 +1,24 @@
 
-hr {
+.company-hr {
   width: 85%;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 p {
-  justify-content: center;
-  font-family: ChauPhilomeneOneRegular;
-  font-size: 20px;
+  text-align: left;
+  font-family: Lato-Regular;
+  font-size: 18px;
 }
 
-.main-content {
+/* .main-content {
   min-height: 100vh;
   height: auto
-}
+} */
  .strong-words {
   color: #2E3B51;
   font-style: italic;
+  font-family: Lato-Bold;
 }
 .company-link {
   font-size: 14px;
@@ -28,10 +29,10 @@ p {
   color: #2E3B51;
 }
 .company-content {
-  width: 70%;
-  align-items: center;
-  text-align: center;
-  font-size: 23px;
+  width: 83%;
+  /* align-items: center; */
+  /* text-align: center; */
+  /* font-size: 23px; */
 }
 
 

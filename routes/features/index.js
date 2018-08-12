@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('download/index', { title: 'Tutorbloc' });
+  res.render('features/index', { title: 'Tutorbloc' });
 });
 
 module.exports = router;

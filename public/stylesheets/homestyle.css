@@ -11,9 +11,14 @@ h1 {
   font-family: ChauPhilomeneOneRegular;
   color: #5B5E6D;
   /* font-size: 7.3vh; */
-  font-size: 25px;
+  font-size: 26px;
   text-align: left;
   white-space: nowrap;
+}
+
+#title_header_1 {
+  color: #FFFFFF;
+  font-size: 32px;
 }
 
 #click-bait-text{
@@ -33,6 +38,8 @@ h1 {
 .informational-section {
   background-color: #2E3B51;
   height: 35vh;
+  padding-left: 82px;
+  padding-right: 82px;
   /* margin-top: 55.6px; */
 }
 
@@ -61,6 +68,11 @@ h1 {
   height:500px;
   float:left;
 }
+
+#welcome-text{
+  /* font-family: Lato-Bold; */
+  font-weight: 600;
+}
 @media(max-width:576px)  {
   .line-break-pitch{
     display: none;
@@ -72,13 +84,15 @@ h1 {
     display: none;
   }
   #welcome-text {
-    padding: 0px 30px;
+    padding: 0px 15px;
+    text-align: left;
   }
   #main-content-alignment {
     margin-left: 0px;
   }
   h1 {
-    text-align: center;
+    text-align: left;
+        padding: 0 15px;
   }
   .landing-info{
     padding-left:0px;
@@ -100,6 +114,8 @@ h1 {
     height: auto;
     padding-top: 30px;
     padding-bottom: 90px;
+    padding-left: 40px;
+    padding-right: 40px
   }
   .informational-image {
     display: block;
@@ -113,6 +129,9 @@ h1 {
 
   p {
     font-size: 15px;
+  }
+  .standard-button {
+    width: 92vw;
   }
 }
 
@@ -130,9 +149,12 @@ h1 {
     /* margin-top: 55.6px; */
   }
   h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
-
+  #title_header_1 {
+    color: #FFFFFF;
+    font-size: 32px;
+  }
   /* .footer-section {
     background-color: #FFFFFF;
     height: auto;
@@ -154,8 +176,8 @@ h1 {
   .informational-section {
     background-color: #2E3B51;
     height: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .informational-image {
@@ -200,6 +222,10 @@ h1 {
     font-size: 32px;
     /* text-align: center; */
   }
+  #title_header_1 {
+    color: #FFFFFF;
+    font-size: 36px;
+  }
 
   .informational-text {
     color: #FFFFFF;
@@ -225,12 +251,21 @@ h1 {
   h1 {
     /* font-family: ChauPhilomeneOneRegular; */
     /* color: #5B5E6D; */
-    font-size: 40px;
+    font-size: 32px;
     /* text-align: left; */
   }
-
+  #title_header_1 {
+    color: #FFFFFF;
+    font-size: 40px;
+  }
   p {
     font-size: 17px;
+  }
+
+  #landing-img {
+
+    height:480px;
+
   }
 }
 
@@ -248,7 +283,11 @@ h1 {
   h1 {
     /* font-family: ChauPhilomeneOneRegular; */
     /* color: #5B5E6D; */
-    font-size: 55px;
+    font-size: 48px;
     /* text-align: left; */
+  }
+  #title_header_1 {
+    color: #FFFFFF;
+    font-size: 55px;
   }
 }
