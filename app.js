@@ -36,6 +36,11 @@ app.use('/features', features);
 app.use('/blog', blog);
 app.use('/resource-bank', resourceBank);
 
+app.use('/robots.txt', function (req, res, next) {
+    res.type('text/plain')
+    res.send("User-agent: *\nDisallow: ");
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
