@@ -18,3 +18,12 @@ function closeNav() {
     document.getElementById("menu").style.width = "0%";
     // document.getElementById("menu").style.display = "none";
 }
+
+$(document).ready(function() {
+  var pathname = window.location.pathname;
+  // #navbarText > ul.navbar-nav.ml-auto.w-100.justify-content-start > li:nth-child(2)
+  $('#navbarText > ul > li > a[href="' + pathname + '"]').addClass('active');
+  console.log("Working");
+  console.log(pathname);
+
+});
