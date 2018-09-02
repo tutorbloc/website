@@ -183,7 +183,7 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   border: none;
   color: white;
   font-family: Lato-Regular;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 12px;
   width: 220px;
   height: 40px;
@@ -353,9 +353,9 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .form-control:focus {
-  box-shadow: 0 0px 3px 0 rgba(0,0,0,0.4),0 0px 0px 0 rgba(0,0,0,0.2);
-  /* box-shadow: none; */
-  border-color: #2E3B51;
+  /* box-shadow: 0 0px 3px 0 rgba(0,0,0,0),0 0px 0px 0 rgba(0,0,0,0); */
+  box-shadow: 0 0px 0px 0 #c3cad2, 0 0px 0px 0 #c3cad2;
+  border-color: #c3cad2;
 }
 
 .social-link{
@@ -408,10 +408,11 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   border: none;
   color: white;
   font-family: Lato-Regular;
-  border-radius: 0px;
+  /* border-radius: 0px; */
   font-size: 12px;
   width: 130px;
   height: 40px;
+  border-radius: 0px 3px 3px 0px;
 }
 
 #footer-social-list {
