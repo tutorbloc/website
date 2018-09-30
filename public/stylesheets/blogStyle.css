@@ -1,0 +1,21 @@
+
+.blogContainer{
+  box-shadow: 0px 0px 2px 1px rgba(91,94,109,1);
+  height: 325px;
+  border-radius: 6px;
+  width: 100%;
+  /* background-color: white; */
+  margin-bottom: 23px;
+  /* margin: 10px; */
+}
+
+.podcastContainer {
+  box-shadow: 0px 0px 2px 1px rgba(91,94,109,1);
+  height: 150px;
+  border-radius: 6px;
+  width: 100%;
+  /* background-color: white; */
+  /* margin-top: 23px; */
+  margin-bottom: 23px;
+  /* margin: 10px; */
+}

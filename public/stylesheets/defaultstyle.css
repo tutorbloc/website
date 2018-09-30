@@ -122,11 +122,11 @@ button:focus{
   font-size: 14px;
   font-family: Lato-Bold;
   text-align: center;
-  padding-bottom: 6px;
+  /* padding-bottom: 6px; */
+  /* border-bottom: 2px transparent; */
 
 }
-.nav-link:hover {
-  /* font-family: Lato-Regular; */
+/* .nav-link:hover {
   color: #5B5E6D;
   border-bottom: 2px solid;
 
@@ -134,12 +134,16 @@ button:focus{
 
 .nav-link.active{
   border-bottom: 2px solid;
-}
+} */
 .nav-site-links {
   padding-right: 10px;
   padding-left: 10px;
 }
 
+.nav-link {
+  display: inline;
+  padding: .5rem 2rem;
+}
  #main-content-alignment{
   margin-left: 60px;
   margin-right: 0px;
@@ -352,6 +356,9 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     display: inline-block;
 }
 
+/* .form-control {
+  font-family: Lato-Regular;
+} */
 .form-control:focus {
   /* box-shadow: 0 0px 3px 0 rgba(0,0,0,0),0 0px 0px 0 rgba(0,0,0,0); */
   box-shadow: 0 0px 0px 0 #c3cad2, 0 0px 0px 0 #c3cad2;
@@ -435,6 +442,12 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 #footer-email > a:hover {
   color: #5B5E6D;
   text-decoration: none;
+}
+input {
+  font-family: Lato-Light;
+}
+input[type="text"]{
+  font-size: 9pt;
 }
 input::placeholder{
   font-size: 9pt;
@@ -593,7 +606,6 @@ input::placeholder{
     padding-left: 13px;
     padding-right: 0px;
   } */
-
   .footer-title {
 
     font-size: 15px;
@@ -667,6 +679,15 @@ input::placeholder{
 } */
 
 @media(min-width:992px) {
+  .nav-link:hover {
+    color: #5B5E6D;
+    border-bottom: 2px solid;
+
+  }
+
+  .nav-link.active{
+    border-bottom: 2px solid;
+  }
   .navbar {
     padding-left: 105px;
     padding-right: 105px;
@@ -715,6 +736,16 @@ input::placeholder{
 }
 
 @media(min-width:1200px) {
+  .nav-link:hover {
+    color: #5B5E6D;
+    border-bottom: 2px solid;
+
+  }
+
+  .nav-link.active{
+    border-bottom: 2px solid;
+  }
+
   .navbar {
     padding-left: 105px;
     padding-right: 105px;
