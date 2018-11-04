@@ -16,9 +16,12 @@ h1 {
   white-space: nowrap;
 }
 
-#title_header_1 {
+#subHeader {
+  font-family: ChauPhilomeneOneRegular;
   color: #FFFFFF;
   font-size: 32px;
+  text-align: left;
+  white-space: nowrap;
 }
 
 #click-bait-text{
@@ -153,7 +156,7 @@ h1 {
   h1 {
     font-size: 28px;
   }
-  #title_header_1 {
+  #subHeader {
     color: #FFFFFF;
     font-size: 32px;
   }
@@ -224,7 +227,7 @@ h1 {
     font-size: 32px;
     /* text-align: center; */
   }
-  #title_header_1 {
+  #subHeader {
     color: #FFFFFF;
     font-size: 36px;
   }
@@ -256,7 +259,7 @@ h1 {
     font-size: 32px;
     /* text-align: left; */
   }
-  #title_header_1 {
+  #subHeader {
     color: #FFFFFF;
     font-size: 40px;
   }
@@ -288,7 +291,7 @@ h1 {
     font-size: 39px;
     /* text-align: left; */
   }
-  #title_header_1 {
+  #subHeader {
     color: #FFFFFF;
     font-size: 55px;
   }
