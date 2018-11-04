@@ -59,7 +59,7 @@ h1 {
   color: #FFFFFF;
   margin-bottom: 0px;
   text-align: center;
-  font-family: Lato-Hairline;
+  font-family: Lato-Light;
   font-size: 14px;
 }
 .landing-info{
@@ -95,7 +95,7 @@ h1 {
   #main-content-alignment {
     margin-left: 0px;
   }
-  h1 {
+  h1 , #subHeader{
     text-align: left;
         padding: 0 15px;
   }
@@ -236,7 +236,7 @@ h1 {
     color: #FFFFFF;
     margin-bottom: 0px;
     text-align: center;
-    font-family: Lato-Hairline;
+    font-family: Lato-Light;
     font-size: 14px;
   }
 }
