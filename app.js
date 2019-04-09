@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var helmet = require('helmet');
 
 var home = require('./routes/home/index');
-var blog = require('./routes/blog/index');
+var community = require('./routes/community/index');
 var features = require('./routes/features/index');
 var ourStory = require('./routes/ourStory/index');
 var resourceBank = require('./routes/resourceBank/index');
@@ -33,10 +33,10 @@ app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); /
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/', home);
-app.use('/our-story',ourStory);
+app.use('/ourStory',ourStory);
 app.use('/features', features);
-app.use('/blog', blog);
-app.use('/resource-bank', resourceBank);
+app.use('/community', community);
+app.use('/resourceBank', resourceBank);
 
 app.use('/robots.txt', function (req, res, next) {
     res.type('text/plain')

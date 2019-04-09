@@ -96,8 +96,11 @@ button:focus{
 }
 
 .main-content {
+  /* max-height: 82%; */
   min-height: 82%;
-  padding-right: 0px;
+  padding-right: 105px;
+  padding-left: 95px;
+  padding-top: 50px;
   /* height: 90vh; */
   /* overflow-y: show;  */
   /* don't show content that exceeds my height */
@@ -541,6 +544,12 @@ input::placeholder{
     direction: rtl;
   }
 
+  .main-content {
+
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+  }
 }
 
 @media(min-width:576px) {
@@ -556,6 +565,7 @@ input::placeholder{
     align-items: center;
     text-align: center;
   } */
+
   #main-content-alignment {
     margin-left: 0px;
     margin: 0px;
@@ -606,11 +616,13 @@ input::placeholder{
     padding-left: 13px;
     padding-right: 0px;
   } */
+
   .footer-title {
 
     font-size: 15px;
 
   }
+
   /* .vertical-alignment {
     min-height: 100%;
     min-height: 60vh;

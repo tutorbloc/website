@@ -6,25 +6,30 @@
     <title>
       <%= title %>
     </title>
-    <link rel='stylesheet' href='/stylesheets/defaultstyle.css' />
-    <link rel="stylesheet" href="/stylesheets/ourStoryStyle.css">
+
+    <link rel="stylesheet" href='/stylesheets/defaultstyle.css' />
+    <link rel="stylesheet" href="/stylesheets/communityStyle.css">
 </head>
 
 <body>
   <% include ../partials/scripts.ejs %>
-    <script type="text/javascript" src="/javascripts/ourStory/script.js">
+
     </script>
     <!-- <h1><%= title %></h1> -->
     <!-- <img src="/images/graphic_design.svg" alt="" class="graphic_img"> -->
     <% include ../partials/menu.ejs %>
 
-      <div class="main-content">
-        <div class=" container-fluid">
-          <div class="d-none d-sm-none d-md-none d-lg-block">
+      <div class="d-sm-block d-md-block d-lg-none d-xl-none">
+        <h1>  Community     </h1>
+      </div>
 
+      <div class="main-content">
+        <div class=" container-fluid height-limit">
+          <div class="d-none d-sm-none d-md-none d-lg-block">
+            <% include ../partials/community/desktopView.ejs %>
           </div>
           <div class="d-sm-block d-md-block d-lg-none d-xl-none">
-
+            <% include ../partials/community/mobileView.ejs %>
           </div>
 
         </div>

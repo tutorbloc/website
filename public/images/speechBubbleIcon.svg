@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DESKTOP-COMMUNITY" transform="translate(-609.000000, -229.000000)" fill-rule="nonzero" fill="#2E3B51">
+            <g id="LEFT-SIDE" transform="translate(126.000000, 167.000000)">
+                <path d="M493,79.5003125 C492.6175,79.5003125 492.241562,79.4771875 491.870625,79.4409375 L486.75,82.0009375 L486.75,77.5746875 C484.465625,75.9715625 483,73.5121875 483,70.750625 C483,65.9175 487.477188,62 493,62 C498.522812,62 503,65.9178125 503,70.750625 C503,75.5828125 498.522813,79.5003125 493,79.5003125 Z M493,63.25 C488.1675,63.25 484.25,66.608125 484.25,70.7503125 C484.25,73.290625 485.7425,75.5109375 488.000313,76.864375 L488,77 L488,80.125 L491.750313,78.2509375 C491.750313,78.2509375 491.565938,78.2503125 493,78.2503125 C497.8325,78.2503125 501.75,74.8925 501.75,70.750625 C501.75,66.608125 497.8325,63.25 493,63.25 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

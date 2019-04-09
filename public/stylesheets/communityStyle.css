@@ -1,30 +1,36 @@
-/*
+
+
+h5.card-title{
+    font-family: Lato-Regular;
+    font-size: 16px;
+    /* white-space: nowrap; */
+}
 .company-hr {
   width: 85%;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-p {
+p.card-text ,  h6.card-subtitle {
   text-align: left;
-  font-family: Lato-Regular;
-  font-size: 18px;
+  font-family: Lato-Light;
+  font-size: 14px;
 }
 
-.nav-pills {
+ .mobileOption.nav-pills {
   background-color: #C0B2A3;
   opacity: 50%;
   border-radius: 15px;
 }
-.nav-link:hover{
+.mobileOption.nav-link:hover{
   color: #2E3B51;
 }
-.nav-link{
+.mobileOption.nav-link{
   display: inline-block;
   width: 100%;
   color: #2E3B51;
 }
-.nav-pills .nav-link.active{
+.mobileOption.nav-pills .mobileOption.nav-link.active{
   opacity: 50%;
   background-color: #C0B2A3;
   width: 100%;
@@ -32,9 +38,12 @@ p {
   display: inline-block;
   width: 100%;
 }
+
 .card {
   border-radius: 5px;
   border-top: 9px solid #2E3B51;
+  border-left: 0px;
+  border-right: 0px;
 }
 .strong-words {
   color: #2E3B51;
@@ -58,7 +67,7 @@ p {
 
 
 .communityInfo{
-  max-height: 70%;
+  max-height: 80%;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -69,7 +78,8 @@ p {
   border-bottom: 1px solid #2E3B51;
   height: 150px;
   border-top: 1px solid #2E3B51;
-  background-color:rgba(192,178,166,0.1);
+  /* background-color:rgba(192,178,166,0.1); */
+  background-color: rgba(192, 178, 166,0.5);
   padding: 21px 15px 21px 48px;
   margin: 0;
 }
@@ -93,6 +103,11 @@ p {
 .iconText {
   font-size: 10px;
   white-space: nowrap;
+  padding-right: 12px;
+}
+
+.iconText:first-child {
+  padding-top: 10px;
 }
 .iconImage {
   margin-right: 10px;
@@ -107,4 +122,17 @@ p {
   text-align: center;
   font-family: Lato-Italic;
   font-size: 13px;
-} */
+}
+
+
+@media(min-width:768px) {
+  .height-limit {
+      max-height: 65vh;
+  }
+}
+
+@media(max-width:576px) {
+  .height-limit {
+    max-height: none;
+  }
+}
