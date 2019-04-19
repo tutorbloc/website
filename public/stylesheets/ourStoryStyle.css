@@ -103,8 +103,20 @@ p {
   overflow:hidden;
 }
 
+.quote::before{
+content: "“";
+}
+.quote::after {
+  content: "”";
+}
+.quote {
+  font-size: 144px;
+  font-family: Lato-Regular;
+  color: #5B5E6D;
+
+}
 #company-tagline {
   text-align: center;
   font-family: Lato-Italic;
   font-size: 13px;
-} */
+}

@@ -37,6 +37,8 @@ p.card-text ,  h6.card-subtitle {
   border-radius: 15px;
   display: inline-block;
   width: 100%;
+  color: #2E3B51;
+  font-size: 16px;
 }
 
 .card {
@@ -78,8 +80,8 @@ p.card-text ,  h6.card-subtitle {
   border-bottom: 1px solid #2E3B51;
   height: 150px;
   border-top: 1px solid #2E3B51;
-  /* background-color:rgba(192,178,166,0.1); */
-  background-color: rgba(192, 178, 166,0.5);
+  background-color:rgba(192,178,166,0.1);
+  /* background-color: rgba(192, 178, 166,0.5); */
   padding: 21px 15px 21px 48px;
   margin: 0;
 }
