@@ -52,69 +52,127 @@ p {
 .company-content {
   width: 83%;
   /* align-items: center; */
-  /* text-align: center; */
-  /* font-size: 23px; */
+
+/* text-align: center; */
+
+/* font-size: 23px; */
+
 }
 
-
-.communityInfo{
+.communityInfo {
   max-height: 70%;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-.communityPost , .communityMobilePost{
+
+.communityPost, .communityMobilePost {
   color: #2E3B51;
   font-family: Lato-Regular;
   border-radius: 3px;
   border-bottom: 1px solid #2E3B51;
   height: 150px;
   border-top: 1px solid #2E3B51;
-  background-color:rgba(192,178,166,0.1);
+  background-color: rgba(192, 178, 166, 0.1);
   padding: 21px 15px 21px 48px;
   margin: 0;
 }
+
 .communityMobilePost {
   border: 1px solid #2E3B51;
   overflow: hidden;
   height: auto;
   padding-bottom: 0px;
 }
+
 .communityHeader {
   font-size: 18px;
   font-family: Lato-Bold;
 }
-.communitySummary{
+
+.communitySummary {
   padding-top: 25px;
   font-size: 16px;
   font-family: Lato-Regular;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .iconText {
   font-size: 10px;
   white-space: nowrap;
 }
+
 .iconImage {
   margin-right: 10px;
 }
 
-.noOverflow{
-  height:100%;
-  overflow:hidden;
+.noOverflow {
+  height: 100%;
+  overflow: hidden;
 }
 
-.quote::before{
-content: "“";
-}
-.quote::after {
-  content: "”";
-}
-.quote {
+/* .quoteText::before{
   font-size: 144px;
+  content: "“";
+  color: #5B5E6E;
+  line-height: 0em;
+  margin-left: -50px;
+  display: inline-block;
+}
+.quoteText::after {
+  color: #5B5E6E;
+  font-size: 144px;
+  content: "”";
+  line-height: 0.8em;
+  float: right;
+  margin-right: -50px;
+} */
+.openQuote , .closeQuote {
+  font-size: 144px;
+  position: relative;
+  font-family: Lato-Regular;
+  color: #5B5E6E;
+}
+/* .openQuote {
+  right: 45px;
+} */
+.closeQuote {
+  /* right: -45px; */
+}
+.quoteText {
+  font-size: 64px;
+  font-family: Lato-Regular;
+  color: #5B5E6E;;
+  line-height: 1.0em;
+  float: left;
+  text-indent: -48px;
+  }
+
+/* #quote {
+  font-size: 130px;
   font-family: Lato-Regular;
   color: #5B5E6D;
-
+  line-height: 0.8em;
+  quotes: "“", "”";
+  display: inline
 }
+
+#quoteText {
+  font-size: 60px;
+} */
+
+.card {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.card-body {
+  min-height: 250px;
+  width: 50%:
+  /* background: transparent; */
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0.1;
+}
+
 #company-tagline {
   text-align: center;
   font-family: Lato-Italic;
