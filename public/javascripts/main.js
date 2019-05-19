@@ -22,6 +22,6 @@ function closeNav() {
 $(document).ready(function() {
   var pathname = window.location.pathname;
   // #navbarText > ul.navbar-nav.ml-auto.w-100.justify-content-start > li:nth-child(2)
-  $('#navbarText > ul > li > a[href^="' + pathname + '"]').addClass('active');
+  $('#navbarText > ul > li > a[href="' + pathname + '"]').addClass('active');
 
 });
