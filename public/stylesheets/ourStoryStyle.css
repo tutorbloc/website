@@ -163,15 +163,19 @@ p {
 
 .card {
   background-color: rgba(0, 0, 0, 0);
+  border: 0px solid black;
 }
-
+.card-img-top{
+  border-radius: 6px;
+}
 .card-body {
-  min-height: 250px;
+  min-height: 200px;
   width: 50%:
   /* background: transparent; */
   background-color: rgba(0, 0, 0, 0);
   opacity: 0.1;
 }
+
 
 #company-tagline {
   text-align: center;

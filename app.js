@@ -12,6 +12,7 @@ var community = require('./routes/community/index');
 var features = require('./routes/features/index');
 var ourStory = require('./routes/ourStory/index');
 var resourceBank = require('./routes/resourceBank/index');
+var mailingList = require('./routes/mailingList/index');
 // var users = require('./routes/users');
 
 var app = express();
@@ -33,10 +34,11 @@ app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); /
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/', home);
-app.use('/ourStory',ourStory);
+app.use('/our-story',ourStory);
 app.use('/features', features);
 app.use('/community', community);
 app.use('/resourceBank', resourceBank);
+app.use('/mailingList', mailingList);
 
 app.use('/robots.txt', function (req, res, next) {
     res.type('text/plain')

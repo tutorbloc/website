@@ -3,11 +3,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('our-story/index', { title: 'tutorbloc | discover and instantly book qualified tutors' });
+  res.render('ourStory/index', { title: 'tutorbloc | discover and instantly book qualified tutors' });
 });
 
 router.get('/about', function(req, res, next) {
-  res.render('our-story/index', { title: 'tutorbloc | discover and instantly book qualified tutors' });
+  res.render('ourStory/index', { title: 'tutorbloc | discover and instantly book qualified tutors' });
 });
 
 module.exports = router;

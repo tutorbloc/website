@@ -93,13 +93,17 @@
           <div class="row d-flex flex-wrap align-items-center">
             <div class="col-12">
               <h2 class="footer-updates-title">GET UPDATES & MORE</h2>
+              <form class="" action="/mailingList/addUser" method="post">
               <div class="input-group mb-3 mt-4">
-                <input type="text" class="form-control" placeholder="Email Address" aria-label="User's email" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                  <!-- <span class="input-group-text" >SUBMIT</span> -->
-                  <button type="button" name="button" id="get-updates"> SUBMIT</button>
-                </div>
+
+                  <input type="text" class="form-control" placeholder="Email Address" aria-label="User's email" aria-describedby="basic-addon2" name="emailAddress">
+                  <div class="input-group-append">
+                    <!-- <span class="input-group-text" >SUBMIT</span> -->
+                    <button type="submit" name="button" id="get-updates"> SUBMIT</button>
+                  </div>
+
               </div>
+              </form>
             </div>
           </div>
       </div>
